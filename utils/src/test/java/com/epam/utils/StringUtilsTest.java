@@ -1,4 +1,4 @@
-package utils;
+package com.epam.utils;
 
 import com.epam.utils.StringUtils;
 import org.junit.jupiter.api.Test;
