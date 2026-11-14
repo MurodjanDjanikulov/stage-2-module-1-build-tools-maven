@@ -18,10 +18,8 @@
         <maven.surefire.plugin.version>3.5.4</maven.surefire.plugin.version>
         <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
         <maven.jar.plugin.version>3.5.0</maven.jar.plugin.version>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source> <!--no need to declare it in plugin-->
+        <maven.compiler.target>1.8</maven.compiler.target> <!--no need to declare it in plugin-->
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -55,10 +53,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven.compiler.plugin.version}</version>
-                <configuration>
-                    <source>${maven.compiler.target}</source>
-                    <target>${maven.compiler.source}</target>
-                </configuration>
             </plugin>
         </plugins>
     </build>
